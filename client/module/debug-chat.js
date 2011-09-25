@@ -12,7 +12,8 @@
 		});
 	}
 	function sendMessage(message) {
-		makeRequest('/cmd/chat/send?text=' + message.toString(), function(result) {
+		var request = '/cmd/chat/send?text=' + message.toString();
+		makeRequest(request, function(result) {
 			assert(result === 'OK', 'Result from server of chat message send wrong: ' + result);
 			updateChat();
 		});
