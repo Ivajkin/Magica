@@ -8,9 +8,12 @@ var sys = require('util'),
 	querystring = require('querystring');
 	
 	
-function load_static_file(uri, response) {
+function load_static_file(uri, response, working_directory) {
 	if(uri === '/')
 		uri = '/index.html'
+	
+	uri = path.join(working_directory, uri);
+
 	var filename = path.join(process.cwd(), uri);
 	sys.puts("Loading static file: " + filename);
 	path.exists(filename, function(exists) {
@@ -36,17 +39,22 @@ function load_static_file(uri, response) {
 		});
 	});
 }
+
 /*
- * Создаём сервер, пишем "Hello, World!"
+ * Создаём сервер, выдаём файлы.
  */
 http.createServer(function (request, response) {
 	sys.puts('+------- User connected: ' + new Date() + '-------+');
 
 	var uri = url.parse(request.url).pathname;
 	response.writeHeader(200, {"Content-Type" : "text/plain"});
-	response.write("<p>Hello, World!</p>");
-	response.write("<p>Chat:</p>");
-	response.write("<hr/>");
+
+	if(uri.indexOf('/cmd/') === 0) {
+		sys.puts('Special command requested: ' + uri);
+		response.end('Special command requested: ' + uri);
+	} else {
+		load_static_file(uri, response, './client/');
+	}
 }).listen(2011);
 
 console.log('Server running at http://127.0.0.1:2011/');
