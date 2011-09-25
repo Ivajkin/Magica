@@ -41,6 +41,24 @@ function load_static_file(uri, response, working_directory) {
 }
 
 /*
+ * Специальные комманды к серверу и их результаты.
+ */
+var commands = {
+	// Название.
+	"chat/log.get": {
+		// Регулярное выражение для парсинга.
+		regex: /chat\/log\.get/,
+		// То, что сделаем если найдём регулярное выражение.
+		// Обязательно должен вызывать callback, даже после ошибки.
+		// Специально посылаю regex в функцию вместо использования this.regex, так как контекст выполнения может быть изменён.
+		result: function(response, command, regex, callback) {
+			load_static_file('chat.log', response, './debug/') {
+			callback();
+		}
+	}
+};
+
+/*
  * Создаём сервер, выдаём файлы.
  */
 http.createServer(function (request, response) {
@@ -51,7 +69,13 @@ http.createServer(function (request, response) {
 
 	if(uri.indexOf('/cmd/') === 0) {
 		sys.puts('Special command requested: ' + uri);
-		response.end('Special command requested: ' + uri);
+		for(var key in commands) {
+			if(commands[key].regex.test(uri)) {
+				sys.puts('Special command: ' + key);
+				commands[key].result(response, uri, commands[key].regex, function() {
+				});
+			}
+		}
 	} else {
 		load_static_file(uri, response, './client/');
 	}
