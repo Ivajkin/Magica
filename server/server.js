@@ -52,7 +52,7 @@ var commands = {
 		// Обязательно должен вызывать callback, даже после ошибки.
 		// Специально посылаю regex в функцию вместо использования this.regex, так как контекст выполнения может быть изменён.
 		result: function(response, command, regex, callback) {
-			load_static_file('chat.log', response, './debug/') {
+			load_static_file('chat.log', response, './debug/');
 			callback();
 		}
 	}
