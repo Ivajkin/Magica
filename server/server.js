@@ -47,15 +47,6 @@ http.createServer(function (request, response) {
 	response.write("<p>Hello, World!</p>");
 	response.write("<p>Chat:</p>");
 	response.write("<hr/>");
-	fs.readFile(filename, function(err, file) {
-		if(err) {
-			sys.puts(err + "\n");
-			response.end();
-			return;
-		}
-		response.write(file);
-		response.end();
-	});
 }).listen(2011);
 
 console.log('Server running at http://127.0.0.1:2011/');
