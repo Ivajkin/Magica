@@ -11,17 +11,34 @@
 			$('messages').set('html', chat_messages_data);			
 		});
 	}
-	function sendMessage(message) {
-		var request = '/cmd/chat/send?text=' + message.toString();
+	function sendMessage(username, message) {
+		var request = '/cmd/chat/send?username=' + username + '&text=' + message.toString();
 		makeRequest(request, function(result) {
 			assert(result === 'OK', 'Result from server of chat message send wrong: ' + result);
 			updateChat();
 		});
 	}
+	var user_info = {
+		setName: function(name) {
+			setCookie('user-name', name);
+		},
+		getName: function() {
+			return getCookie('user-name');
+		}
+	};
 	window.addEvent('domready', function() {
 		updateChat();
+
+		var username = user_info.getName();
+		if(username) {
+			$('chat-user-name').value = username;
+		}
+
 		$('send-btn').addEvent('click', function() {
-			sendMessage($('chat-edit').value);
+			var username = $('chat-user-name').value,
+				message = $('chat-edit').value;
+			user_info.setName(username);
+			sendMessage(username, message);
 		});
 	});
 }) ();

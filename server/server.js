@@ -72,31 +72,35 @@
 		// Название.
 		"chat/send - Send text to the chat": {
 			// Регулярное выражение для парсинга.
-			regex: /chat\/send\?text=(.+)/,
+			regex: /chat\/send\?username=(.+)&text=(.+)/,
 			// То, что сделаем если найдём регулярное выражение.
 			// Обязательно должен вызывать callback, даже после ошибки.
 			// Специально посылаю regex в функцию вместо использования this.regex, так как контекст выполнения может быть изменён.
 			result: function(response, command, regex, callback) {
-				var text = '<p>' + regex.exec(command)[1] + '</p>';
+				var message_info = regex.exec(command);
+				// Превращаем %20 и тому подобное в нормальные символы.
+				var name = decodeURI(message_info[1]),
+					message = decodeURI(message_info[2]);
+				sys.puts('Name: ' + name + ', message: ' + message);
+				var text = '\n' + '<p>' + name + ': ' + message + '</p>';
 
 				sys.puts('Text to send to chat: ' + text);
 
 				var chat_path = path.join(process.cwd(), chat.dir);
 				chat_path = path.join(chat_path, chat.file);
-				fs.open(chat_path, 'a', function(err, fd) {
-					if(err) throw err;
-					sys.puts('File ' + chat.file + ' opened for appending');
-					// TODO: !!! не работает пока.
-					fs.write(fd, text, 0, text.length, null, function(err, written, buffer) {
-						sys.puts('Text appended to chat.log file');
-						if(err) throw err;
-						if(written !== text.length) throw "Wrong written size. Must be " + text.length + " but it is " + written;
+				// Читаем то что есть в чатлоге.
+				fs.readFile(chat_path, function (err, data) {
+					if (err) throw err;
+					sys.puts('Loaded old chatlog: ' + data);
+					fs.writeFile(chat_path, data + text, function (err) {
+						if (err) throw err;
+						console.log('It\'s changed and saved!');
 						response.writeHeader(200, {'Content-Type': 'text/plain'});
 						response.write('OK');
 						response.end();
 						sys.puts('Good work - chat message deployed!');
 						callback();
-					})
+					});
 				});
 			}
 		}
@@ -106,11 +110,13 @@
 	 * Создаём сервер, выдаём файлы.
 	 */
 	http.createServer(function (request, response) {
+		// Сообщаем о подключении (http запрос) и выдаём текщую дату.
 		sys.puts('+------- User connected: ' + new Date() + '-------+');
-
-		var uri = url.parse(request.url).pathname;
-		response.writeHeader(200, {"Content-Type" : "text/plain"});
-
+		
+		// Из url вырегаем важную часть - путь к файлу.
+		var uri = unescape(url.parse(request.url).pathname);
+		
+		// Если это специальная команда, а не запрос к файлу.
 		if(uri.indexOf('/cmd/') === 0) {
 			sys.puts('Special command requested: ' + request.url);
 			for(var key in commands) {
@@ -121,6 +127,7 @@
 				}
 			}
 		} else {
+			// Загружаем файл с диска. Если запрос к "/", то получаем "index.html".
 			load_static_file(uri, response, './client/');
 		}
 	}).listen(2011);
