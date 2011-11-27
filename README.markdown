@@ -1,3 +1,6 @@
+# Before you start! Warning!
+To prevent *hatehatehate* you should install Visual Studio 2008 before you can start working with XNA 3.1.
+Sincerely, your Magica team.
 # To start working with repos:
 1. install git for windows (default installation, your windows username should only contain latina characters)
 2. Start git bash shell
