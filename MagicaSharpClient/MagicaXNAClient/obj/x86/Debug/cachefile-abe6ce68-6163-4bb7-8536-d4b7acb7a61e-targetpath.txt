@@ -1,0 +1,3 @@
+Content\inquisitor.xnb
+Content\cursor.xnb
+Content\frostbolt.xnb
