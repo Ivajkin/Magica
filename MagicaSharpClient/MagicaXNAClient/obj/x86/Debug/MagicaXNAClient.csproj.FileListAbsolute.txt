@@ -7,3 +7,12 @@ C:\Data\Study\Study. Course 4. Semestr 7\Технология разработк
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\MagicaXNAClient.exe
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\MagicaXNAClient.pdb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.exe
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.pdb

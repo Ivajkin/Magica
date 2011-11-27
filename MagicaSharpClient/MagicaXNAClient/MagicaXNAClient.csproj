@@ -94,6 +94,7 @@
     <Compile Include="Logic\FrostboltSpellEffect.cs" />
     <Compile Include="Logic\FrostboltGameAction.cs" />
     <Compile Include="Logic\GameAction.cs" />
+    <Compile Include="Logic\Updatable.cs" />
     <Compile Include="Logic\Logic.cs" />
     <Compile Include="Logic\Player.cs" />
     <Compile Include="Logic\SpellEffect.cs" />

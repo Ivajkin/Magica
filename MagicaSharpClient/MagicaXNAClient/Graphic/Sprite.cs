@@ -13,11 +13,12 @@ namespace MagicaXNAClient
         {
             isDead = false;
             this.texture = texture;
+            boundary = new Vector2(texture.Width, texture.Height);
         }
 
         internal void Draw(GameTime time, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, position, Color.White);
+            spriteBatch.Draw(texture, position - boundary * 0.5f, Color.White);
         }
 
         internal void Move(Vector2 position)
@@ -25,8 +26,9 @@ namespace MagicaXNAClient
             this.position = position;
         }
 
-        Texture2D texture = null;
-        Vector2 position = Vector2.Zero;
+        private Texture2D texture = null;
+        private Vector2 position = Vector2.Zero;
+        private Vector2 boundary = Vector2.Zero;
 
         internal void Destroy()
         {
