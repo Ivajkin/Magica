@@ -1,8 +1,3 @@
-In order to use the "MagicaSharpClient" you should install the XNA 3.1 framework:
-http://www.microsoft.com/download/en/details.aspx?id=39 (73.2 MB)
-In order to play game the small addition to .Net named "Microsoft XNA Framework Redistributable 3.1" is required:
-http://www.microsoft.com/download/en/details.aspx?id=15163 (7.3 MB)
-
 # To start working with repos:
 1. install git for windows (default installation, your windows username should only contain latina characters)
 2. Start git bash shell
@@ -21,3 +16,9 @@ http://help.github.com/win-set-up-git/
  $ git push
 
 10. Congrats! Pretty easy, huh? )
+
+# MagicSharpClient (using XNA Framework)
+In order to use the "MagicaSharpClient" you should install the XNA 3.1 framework:
+http://www.microsoft.com/download/en/details.aspx?id=39 (73.2 MB)
+In order to play game the small addition to .Net named "Microsoft XNA Framework Redistributable 3.1" is required:
+http://www.microsoft.com/download/en/details.aspx?id=15163 (7.3 MB)
