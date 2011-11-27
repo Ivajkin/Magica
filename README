@@ -15,7 +15,9 @@ http://help.github.com/win-set-up-git/
 6. cd to Magica
  $ cd Magica
 7. Change some files (you are our collaborator now, congrats!!)
-8. Commit changes to server (with some commit message!)
+8. Commit changes (with some commit message!)
  $ git commit -a -m "I just start working and I already feel great! I just hitted spacebar in some file and now commit that change"
-....
-x. Pretty easy, huh? )
+9. Push changes to server.
+ $ git push
+
+10. Congrats! Pretty easy, huh? )
