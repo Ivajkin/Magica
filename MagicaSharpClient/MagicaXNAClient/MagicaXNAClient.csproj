@@ -107,6 +107,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="Server\HTTPServer.cs" />
     <Compile Include="Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
