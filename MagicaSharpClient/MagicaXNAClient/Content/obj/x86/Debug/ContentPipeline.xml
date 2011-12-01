@@ -55,6 +55,15 @@
       <Output>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-rock-01.xnb</Output>
       <Time>2011-12-01T12:44:09.0962283+11:00</Time>
     </Item>
+    <Item>
+      <Source>cave-rock-02.png</Source>
+      <Name>cave-rock-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-rock-02.xnb</Output>
+      <Time>2011-12-01T12:48:14.0634586+11:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
