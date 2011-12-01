@@ -84,6 +84,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Graphic\Doodard.cs" />
+    <Compile Include="Logic\DoodardType.cs" />
     <Compile Include="Logic\FrostboltAbility.cs" />
     <Compile Include="Logic\GameObject.cs" />
     <Compile Include="Graphic\Sprite.cs" />
@@ -94,6 +96,8 @@
     <Compile Include="Logic\FrostboltSpellEffect.cs" />
     <Compile Include="Logic\FrostboltGameAction.cs" />
     <Compile Include="Logic\GameAction.cs" />
+    <Compile Include="Logic\Location.cs" />
+    <Compile Include="Logic\LocationType.cs" />
     <Compile Include="Logic\Logic.cs" />
     <Compile Include="Logic\Player.cs" />
     <Compile Include="Logic\SpellEffect.cs" />

@@ -13,8 +13,9 @@ namespace MagicaXNAClient
             this.graphic = graphic;
             this.input = input;
             this.network = network;
-            this.player = new Player(graphic.createSprite("inquisitor"), Player.ControlType.human, this);
             this.cursor = graphic.createSprite("cursor");
+            this.location = new Location(new LocationType("cave"));
+            this.player = new Player(graphic.createSprite("inquisitor"), Player.ControlType.human, this);
         }
         public void Update(GameTime time)
         {
@@ -57,6 +58,7 @@ namespace MagicaXNAClient
         Input input = null;
         Network network = null;
         Player player = null;
+        Location location = null;
         Sprite cursor = null;
 
         internal List<GameObject> getObjectsInArea(Vector2 position, float radius)

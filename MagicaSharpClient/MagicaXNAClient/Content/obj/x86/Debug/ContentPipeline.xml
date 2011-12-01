@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb</Output>
+      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb</Output>
       <Time>2011-11-18T12:37:58.2390402+11:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb</Output>
+      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb</Output>
       <Time>2011-11-19T11:11:43.8311305+11:00</Time>
     </Item>
     <Item>
@@ -25,18 +25,45 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb</Output>
+      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb</Output>
       <Time>2011-11-19T11:37:42.7452347+11:00</Time>
+    </Item>
+    <Item>
+      <Source>cave-mushroom-01.png</Source>
+      <Name>cave-mushroom-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-mushroom-01.xnb</Output>
+      <Time>2011-12-01T11:19:55.8006248+11:00</Time>
+    </Item>
+    <Item>
+      <Source>cave-mushroom-02.png</Source>
+      <Name>cave-mushroom-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-mushroom-02.xnb</Output>
+      <Time>2011-12-01T11:58:26.0662007+11:00</Time>
+    </Item>
+    <Item>
+      <Source>cave-rock-01.png</Source>
+      <Name>cave-rock-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-rock-01.xnb</Output>
+      <Time>2011-12-01T12:44:09.0962283+11:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

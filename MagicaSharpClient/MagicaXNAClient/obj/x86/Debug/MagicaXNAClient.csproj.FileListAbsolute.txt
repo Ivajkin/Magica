@@ -7,3 +7,15 @@ C:\Data\Study\Study. Course 4. Semestr 7\Технология разработк
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\MagicaXNAClient.exe
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\MagicaXNAClient.pdb
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.exe
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.pdb
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-mushroom-02.xnb
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-mushroom-01.xnb
+C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-rock-01.xnb
