@@ -1,2 +1,6 @@
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+=======
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+>>>>>>> 9f32633fb5f605af6023030de492ddd4269db55d

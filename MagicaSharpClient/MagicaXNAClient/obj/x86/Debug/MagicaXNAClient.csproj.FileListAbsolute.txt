@@ -7,6 +7,7 @@ C:\Data\Study\Study. Course 4. Semestr 7\Технология разработк
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Технология разработки программного обеспечения\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb
+<<<<<<< HEAD
 C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb
@@ -19,3 +20,14 @@ C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\M
 C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-mushroom-02.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-mushroom-01.xnb
 C:\Data\Study\Study. Course 4. Semestr 7\Program Development Technology\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-rock-01.xnb
+=======
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cursor.xnb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\inquisitor.xnb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\frostbolt.xnb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\MagicaXNAClient.exe
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\MagicaXNAClient.pdb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.exe
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.pdb
+>>>>>>> 9f32633fb5f605af6023030de492ddd4269db55d

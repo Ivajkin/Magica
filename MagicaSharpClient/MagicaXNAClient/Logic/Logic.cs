@@ -40,6 +40,8 @@ namespace MagicaXNAClient
             {
                 gameObjects.Remove(obj);
             }
+
+            Updatable.UpdateAll(time);
         }
         /*public void CreateGameObject(GameObject.GameObjectType objectType, GameObject owner)
         {

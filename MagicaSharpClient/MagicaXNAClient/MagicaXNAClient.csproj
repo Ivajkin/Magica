@@ -98,6 +98,7 @@
     <Compile Include="Logic\GameAction.cs" />
     <Compile Include="Logic\Location.cs" />
     <Compile Include="Logic\LocationType.cs" />
+    <Compile Include="Logic\Updatable.cs" />
     <Compile Include="Logic\Logic.cs" />
     <Compile Include="Logic\Player.cs" />
     <Compile Include="Logic\SpellEffect.cs" />
