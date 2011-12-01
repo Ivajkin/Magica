@@ -10,6 +10,7 @@
 *.suo
 bin
 obj
+*.suo
 
 # Packages #
 ############
