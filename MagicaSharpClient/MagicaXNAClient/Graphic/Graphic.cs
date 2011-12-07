@@ -16,19 +16,26 @@ namespace MagicaXNAClient
             this.contentManager = contentManager;
             this.spriteBatch = new SpriteBatch(device);
         }
-        public Sprite createSprite(string url)
+        /// <summary>
+        /// Создаёт графический объект.
+        /// </summary>
+        /// <param name="url">Строковой идентификатор ресурса (например название картинки).</param>
+        /// <returns>Созданный графический объект.</returns>
+        public T create<T>(string url) where T : GraphicObject, new()
         {
             Texture2D texture = contentManager.Load<Texture2D>(url);
-            var sprite = new Sprite(texture);
-            sprites.Add(sprite);
+            var sprite = new T();
+            sprite.Init(texture);
+            graphicObjects.Add(sprite);
             return sprite;
         }
+
         public void Draw(GameTime time)
         {
-            List<Sprite> destroySpriteList = new List<Sprite>();
+            List<GraphicObject> destroySpriteList = new List<GraphicObject>();
             device.Clear(Color.White);
             spriteBatch.Begin();
-            foreach (var sprite in sprites)
+            foreach (var sprite in graphicObjects)
             {
                 if (sprite.isDead)
                 {
@@ -43,12 +50,20 @@ namespace MagicaXNAClient
 
             foreach (var sprite in destroySpriteList)
             {
-                sprites.Remove(sprite);
+                graphicObjects.Remove(sprite);
             }
         }
+        public int getScreenWidth() {
+            return device.Viewport.Width;
+        }
+        public int getScreenHeight()
+        {
+            return device.Viewport.Height;
+        }
+
         private GraphicsDevice device = null;
         private SpriteBatch spriteBatch = null;
         private ContentManager contentManager = null;
-        List<Sprite> sprites = new List<Sprite>();
+        private List<GraphicObject> graphicObjects = new List<GraphicObject>();
     }
 }

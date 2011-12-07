@@ -13,9 +13,12 @@ namespace MagicaXNAClient
             this.graphic = graphic;
             this.input = input;
             this.network = network;
-            this.cursor = graphic.createSprite("cursor");
+
             this.location = new Location(new LocationType("cave"));
-            this.player = new Player(graphic.createSprite("inquisitor"), Player.ControlType.human, this);
+
+            this.player = new Player(graphic.create<Sprite>("inquisitor"), Player.ControlType.human, this);
+
+            this.cursor = graphic.create<Sprite>("cursor");
         }
         public void Update(GameTime time)
         {

@@ -18,16 +18,12 @@ namespace MagicaXNAClient
     /// </summary>
     public class Game : Microsoft.Xna.Framework.Game
     {
-        //GraphicsDeviceManager graphics;
-        //SpriteBatch spriteBatch;
         Graphic graphic = null;
         Logic logic = null;
         public Game()
         {
             GraphicsDeviceManager graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-
-            //new ContentManager(serviceProvider, "Content")
         }
 
         /// <summary>

@@ -35,7 +35,7 @@ namespace MagicaXNAClient
             sprite.Move(position);
             if (mouseState.LeftButton == ButtonState.Pressed)
             {
-                    this.Move(new Vector2(mouseState.X, mouseState.Y));
+                this.Move(new Vector2(mouseState.X, mouseState.Y));
             }
             else if (mouseState.RightButton == ButtonState.Pressed)
             {
@@ -45,14 +45,15 @@ namespace MagicaXNAClient
             sprite.Move(position);
         }
 
-        private void Move(Vector2 where) {
+        private void Move(Vector2 where)
+        {
             moveOrderAim = where;
-            
-                var range = moveOrderAim - position;
-                if (range.LengthSquared() > minMoveRangeSquared)
-                {
-                    isMoving = true;
-                }
+
+            var range = moveOrderAim - position;
+            if (range.LengthSquared() > minMoveRangeSquared)
+            {
+                isMoving = true;
+            }
         }
         //private List<Vector2> MOAOrder = ;
         private Vector2 moveOrderAim = Vector2.Zero;

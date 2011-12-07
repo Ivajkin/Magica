@@ -84,7 +84,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Graphic\Background.cs" />
     <Compile Include="Graphic\Doodard.cs" />
+    <Compile Include="Graphic\GraphicObject.cs" />
     <Compile Include="Logic\DoodardType.cs" />
     <Compile Include="Logic\FrostboltAbility.cs" />
     <Compile Include="Logic\GameObject.cs" />
