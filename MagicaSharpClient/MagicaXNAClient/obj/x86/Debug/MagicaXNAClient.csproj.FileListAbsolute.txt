@@ -24,3 +24,5 @@ C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\Resolv
 C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.exe
 C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.pdb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-background-01.xnb
+C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-background-02.xnb

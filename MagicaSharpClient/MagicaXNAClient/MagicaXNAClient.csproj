@@ -109,6 +109,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="Server\HTTPServer.cs" />
     <Compile Include="Singleton.cs" />
+    <Compile Include="Utilities\limit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

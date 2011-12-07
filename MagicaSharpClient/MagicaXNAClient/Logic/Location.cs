@@ -14,6 +14,8 @@ namespace MagicaXNAClient
             variations["mushroom"] = 1;
             variationCount = variations;
 
+            type.createBackground();
+
             this.type = type;
         }
         /*void createDoodard(string name)
@@ -24,7 +26,6 @@ namespace MagicaXNAClient
             }
         }*/
         private List<Doodard> doodards = new List<Doodard>();
-
         // Количество вариантов каждой декорации.
         static Dictionary<string, int> variationCount = null;
         private LocationType type = null;

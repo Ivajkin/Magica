@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
+using MagicaXNAClient.Utilities;
 
 namespace MagicaXNAClient
 {
@@ -16,6 +17,8 @@ namespace MagicaXNAClient
 
                 doodardTypes["rock"] = new DoodardType(name, "rock", 2);
                 doodardCount["rock"] = new limit(7, 9);
+
+                backgroundVariationCount = 2;
             }
             else
             {
@@ -23,6 +26,8 @@ namespace MagicaXNAClient
             }
 
             generateDoodards();
+
+            this.name = name;
         }
         public void generateDoodards()
         {
@@ -38,21 +43,18 @@ namespace MagicaXNAClient
                 }
             }
         }
+        internal void createBackground()
+        {
+            int variation = random.Next(backgroundVariationCount) + 1;
+            background = Graphic.pSingleton.createSprite(name + "-background-" + (variation < 10 ? "0" : "") + variation);
+        }
+
         private Dictionary<string, DoodardType> doodardTypes = new Dictionary<string,DoodardType>();
         private Dictionary<string, limit> doodardCount = new Dictionary<string,limit>();
-        private struct limit
-        {
-            public limit(int min, int max)
-            {
-                this.max = max;
-                this.min = min;
-            }
-            public readonly int max, min;
-            public int generate() {
-                return random.Next(max - min) + min;
-            }
-            private static Random random = new Random();
-        }
+        private readonly int backgroundVariationCount;
+        private readonly string name;
+        private Sprite background = null;
+
         private static Random random = new Random();
     }
 }

@@ -64,6 +64,24 @@
       <Output>C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-rock-02.xnb</Output>
       <Time>2011-12-01T20:37:54.6210843+11:00</Time>
     </Item>
+    <Item>
+      <Source>cave-background-01.jpg</Source>
+      <Name>cave-background-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-background-01.xnb</Output>
+      <Time>2011-12-07T13:12:25+11:00</Time>
+    </Item>
+    <Item>
+      <Source>cave-background-02.jpg</Source>
+      <Name>cave-background-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Data\Docs\Study\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-background-02.xnb</Output>
+      <Time>2011-12-07T13:12:28+11:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
