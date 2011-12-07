@@ -9,10 +9,14 @@ namespace MagicaXNAClient
 {
     class Player: GameObject
     {
-        public Player(Sprite sprite, ControlType type, Logic gameLogic) : base(sprite)
+        public Player(Sprite sprite, ControlType type, Logic gameLogic, Location location) : base(sprite)
         {
             this.type = type;
+            this.location = location;
+
             frostbolt = new FrostboltAbility();
+
+            position = new Vector2(Graphic.pSingleton.getScreenWidth() * 0.5f, Graphic.pSingleton.getScreenHeight() * 0.5f);
         }
         override public void Update(GameTime time, MouseState mouseState)
         {
@@ -47,7 +51,7 @@ namespace MagicaXNAClient
 
         private void Move(Vector2 where)
         {
-            moveOrderAim = where;
+            moveOrderAim = location.nearestFreePoint(where);
 
             var range = moveOrderAim - position;
             if (range.LengthSquared() > minMoveRangeSquared)
@@ -81,5 +85,6 @@ namespace MagicaXNAClient
             }
         }
         FrostboltAbility frostbolt = null;
+        private Location location = null;
     }
 }

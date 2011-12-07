@@ -16,7 +16,7 @@ namespace MagicaXNAClient
 
             this.location = new Location(new LocationType("cave"));
 
-            this.player = new Player(graphic.create<Sprite>("inquisitor"), Player.ControlType.human, this);
+            this.player = new Player(graphic.create<Sprite>("inquisitor"), Player.ControlType.human, this, this.location);
 
             this.cursor = graphic.create<Sprite>("cursor");
         }
@@ -58,13 +58,13 @@ namespace MagicaXNAClient
         {
             gameObjects.Add(obj);
         }
-        List<GameObject> gameObjects = new List<GameObject>();
-        Graphic graphic = null;
-        Input input = null;
-        Network network = null;
-        Player player = null;
-        Location location = null;
-        Sprite cursor = null;
+        private List<GameObject> gameObjects = new List<GameObject>();
+        private Graphic graphic = null;
+        private Input input = null;
+        private Network network = null;
+        private Player player = null;
+        private Location location = null;
+        private Sprite cursor = null;
 
         internal List<GameObject> getObjectsInArea(Vector2 position, float radius)
         {
