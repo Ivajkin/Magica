@@ -25,6 +25,11 @@ namespace MagicaXNAClient
             this.position = position;
         }
 
+        public override float getCameraDistance()
+        {
+            return Graphic.pSingleton.getScreenHeight() - position.Y;
+        }
+
         protected Texture2D texture = null;
         protected Vector2 position = Vector2.Zero;
         protected Vector2 boundary = Vector2.Zero;

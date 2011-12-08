@@ -41,3 +41,4 @@ S:\Projects\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\ResolveAssemb
 S:\Projects\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 S:\Projects\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.exe
 S:\Projects\Magica\MagicaSharpClient\MagicaXNAClient\obj\x86\Debug\MagicaXNAClient.pdb
+S:\Projects\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\creep\mexico.xnb

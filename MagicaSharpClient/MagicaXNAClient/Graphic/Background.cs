@@ -18,6 +18,12 @@ namespace MagicaXNAClient
         {
             spriteBatch.Draw(texture, screenRect, Color.White);
         }
+        public override float getCameraDistance()
+        {
+            const float farFarAway = 999999;
+            return farFarAway;
+        }
+
         private Rectangle screenRect;
     }
 }

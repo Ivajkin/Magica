@@ -23,7 +23,7 @@ namespace MagicaXNAClient
         public Game()
         {
             GraphicsDeviceManager graphics = new GraphicsDeviceManager(this);
-            graphics.IsFullScreen = true;
+            //graphics.IsFullScreen = true;
             graphics.PreferredBackBufferWidth = 1280;
             graphics.PreferredBackBufferHeight = 1024;
 

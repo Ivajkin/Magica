@@ -12,6 +12,11 @@ namespace MagicaXNAClient
         {
             type.createBackground();
             type.generateDoodards();
+            //TODO: убрать мистера Мехико.
+            for (int i = 0; i < 15; ++i)
+            {
+                var mrMexico = new Creep("mexico", this);
+            }
 
             this.type = type;
         }

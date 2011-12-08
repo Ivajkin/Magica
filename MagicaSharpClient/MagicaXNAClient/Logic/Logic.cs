@@ -16,7 +16,7 @@ namespace MagicaXNAClient
 
             this.location = new Location(new LocationType("cave"));
 
-            this.player = new Player(graphic.create<Sprite>("inquisitor"), Player.ControlType.human, this, this.location);
+            this.player = new Player(this.location);
 
             this.cursor = graphic.create<Sprite>("cursor");
         }

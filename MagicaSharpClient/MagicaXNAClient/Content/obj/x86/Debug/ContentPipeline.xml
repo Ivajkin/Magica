@@ -82,6 +82,15 @@
       <Output>S:\Projects\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\cave-background-02.xnb</Output>
       <Time>2011-12-08T12:36:32.4329684+11:00</Time>
     </Item>
+    <Item>
+      <Source>creep\mexico.png</Source>
+      <Name>creep\mexico</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>S:\Projects\Magica\MagicaSharpClient\MagicaXNAClient\bin\x86\Debug\Content\creep\mexico.xnb</Output>
+      <Time>2011-12-08T15:44:42.2968337+11:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
