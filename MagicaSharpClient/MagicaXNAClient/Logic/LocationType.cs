@@ -56,7 +56,7 @@ namespace MagicaXNAClient
         /// <summary>
         /// Расстояние от края экрана.
         /// </summary>
-        public const float wallMargin = 120;
+        public const float wallMargin = 175;
 
         private static Random random = new Random();
     }

@@ -23,6 +23,10 @@ namespace MagicaXNAClient
         public Game()
         {
             GraphicsDeviceManager graphics = new GraphicsDeviceManager(this);
+            graphics.IsFullScreen = true;
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.PreferredBackBufferHeight = 1024;
+
             Content.RootDirectory = "Content";
         }
 
@@ -35,7 +39,6 @@ namespace MagicaXNAClient
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
             graphic = new Graphic(GraphicsDevice, Content);
             Network network = new Network();
             Input input = new Input();
