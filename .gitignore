@@ -12,7 +12,7 @@ bin
 obj
 MagicaSharpClient/MagicaXNAClient/Content/obj
 *.suo
-
+MagicaSharpClient/MagicaXNAClient/obj/x86/Debug/MagicaXNAClient.csproj.FileListAbsolute.txt
 MagicaSharpClient/MagicaXNAClient/MagicaXNAClient.csproj.Debug.cachefile
 
 # Packages #
