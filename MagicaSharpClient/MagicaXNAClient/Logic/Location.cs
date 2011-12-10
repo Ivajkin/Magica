@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
 
 namespace MagicaXNAClient
 {
@@ -9,24 +10,43 @@ namespace MagicaXNAClient
     {
         public Location(LocationType type)
         {
-            // Количество вариантов каждой декорации.
-            var variations = new Dictionary<string, int>();
-            variations["mushroom"] = 1;
-            variationCount = variations;
+            type.createBackground();
+            type.generateDoodards();
+            //TODO: убрать мистера Мехико.
+            for (int i = 0; i < 15; ++i)
+            {
+                var mrMexico = new Creep("mexico", this);
+            }
 
             this.type = type;
         }
-        /*void createDoodard(string name)
+        /// <summary>
+        /// Ближайшая точка к данной, на которой можно стоять.
+        /// </summary>
+        /// <returns>Новая, сдвинутая если была за пределами точка.</returns>
+        public Vector2 nearestFreePoint(Vector2 original)
         {
-            if (variationCount == null)
+            if (original.X < LocationType.wallMargin)
             {
-                throw new Exception("variationCount не инициализирован до создания экземпляра Doodard");
+                original.X = LocationType.wallMargin;
             }
-        }*/
-        private List<Doodard> doodards = new List<Doodard>();
+            else if (original.X > Graphic.pSingleton.getScreenWidth() - LocationType.wallMargin)
+            {
+                original.X = Graphic.pSingleton.getScreenWidth() - LocationType.wallMargin;
+            }
 
-        // Количество вариантов каждой декорации.
-        static Dictionary<string, int> variationCount = null;
+            if (original.Y < LocationType.wallMargin)
+            {
+                original.Y = LocationType.wallMargin;
+            }
+            else if (original.Y > Graphic.pSingleton.getScreenHeight() - LocationType.wallMargin)
+            {
+                original.Y = Graphic.pSingleton.getScreenHeight() - LocationType.wallMargin;
+            }
+
+            return original;
+        }
+        private List<Doodard> doodards = new List<Doodard>();
         private LocationType type = null;
     }
 }

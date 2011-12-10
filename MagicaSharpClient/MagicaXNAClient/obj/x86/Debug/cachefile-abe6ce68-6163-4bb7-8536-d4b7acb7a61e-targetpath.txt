@@ -5,3 +5,6 @@ Content\cave-mushroom-01.xnb
 Content\cave-mushroom-02.xnb
 Content\cave-rock-01.xnb
 Content\cave-rock-02.xnb
+Content\cave-background-01.xnb
+Content\cave-background-02.xnb
+Content\creep\mexico.xnb

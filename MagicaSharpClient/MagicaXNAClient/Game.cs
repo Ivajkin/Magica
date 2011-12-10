@@ -18,16 +18,16 @@ namespace MagicaXNAClient
     /// </summary>
     public class Game : Microsoft.Xna.Framework.Game
     {
-        //GraphicsDeviceManager graphics;
-        //SpriteBatch spriteBatch;
         Graphic graphic = null;
         Logic logic = null;
         public Game()
         {
             GraphicsDeviceManager graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
+            //graphics.IsFullScreen = true;
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.PreferredBackBufferHeight = 1024;
 
-            //new ContentManager(serviceProvider, "Content")
+            Content.RootDirectory = "Content";
         }
 
         /// <summary>
@@ -39,7 +39,6 @@ namespace MagicaXNAClient
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
             graphic = new Graphic(GraphicsDevice, Content);
             Network network = new Network();
             Input input = new Input();

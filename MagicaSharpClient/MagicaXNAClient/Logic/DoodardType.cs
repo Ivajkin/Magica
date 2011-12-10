@@ -17,7 +17,7 @@ namespace MagicaXNAClient
         public Doodard createDoodard(Vector2 position) {
             int variant = random.Next(variationCount) + 1;
             string textureType = locationType + "-" + name + "-" + (variant < 10 ? "0" : "") + variant;
-            Doodard doodard = new Doodard(Graphic.pSingleton.createSprite(textureType));
+            Doodard doodard = new Doodard(Graphic.pSingleton.create<Sprite>(textureType));
             doodard.Move(position);
             return doodard;
         }
