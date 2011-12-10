@@ -10,7 +10,10 @@
 *.suo
 bin
 obj
+MagicaSharpClient/MagicaXNAClient/Content/obj
 *.suo
+
+MagicaSharpClient/MagicaXNAClient/MagicaXNAClient.csproj.Debug.cachefile
 
 # Packages #
 ############
