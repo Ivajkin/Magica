@@ -11,7 +11,7 @@ namespace MagicaXNAClient
     class Creep : Character
     {
         public Creep(string type, Location location)
-            : base(Graphic.pSingleton.create<Sprite>("creep/" + type), location)
+            : base(new CharacterType(type), Fraction.hostile, location)
         {
         }
         protected override void InputReaction(GameTime time, MouseState mouseState)

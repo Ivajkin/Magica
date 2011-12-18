@@ -85,11 +85,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Graphic\Background.cs" />
+    <Compile Include="Graphic\Decal.cs" />
     <Compile Include="Graphic\Doodard.cs" />
     <Compile Include="Graphic\GraphicObject.cs" />
     <Compile Include="Logic\Character.cs" />
+    <Compile Include="Logic\CharacterType.cs" />
     <Compile Include="Logic\Creep.cs" />
+    <Compile Include="Logic\Damage.cs" />
     <Compile Include="Logic\DoodardType.cs" />
+    <Compile Include="Logic\Fraction.cs" />
     <Compile Include="Logic\FrostboltAbility.cs" />
     <Compile Include="Logic\GameObject.cs" />
     <Compile Include="Graphic\Sprite.cs" />
@@ -100,6 +104,7 @@
     <Compile Include="Logic\FrostboltSpellEffect.cs" />
     <Compile Include="Logic\FrostboltGameAction.cs" />
     <Compile Include="Logic\GameAction.cs" />
+    <Compile Include="Logic\Item.cs" />
     <Compile Include="Logic\Location.cs" />
     <Compile Include="Logic\LocationType.cs" />
     <Compile Include="Logic\Updatable.cs" />
@@ -151,9 +156,6 @@
       <ProductName>Microsoft XNA Framework Redistributable 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

@@ -8,6 +8,7 @@
 *.so
 *.pdb
 *.suo
+*.idc
 bin
 obj
 MagicaSharpClient/MagicaXNAClient/Content/obj

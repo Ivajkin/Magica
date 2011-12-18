@@ -1,4 +1,3 @@
-Content\inquisitor.xnb
 Content\cursor.xnb
 Content\frostbolt.xnb
 Content\cave-mushroom-01.xnb
@@ -7,4 +6,8 @@ Content\cave-rock-01.xnb
 Content\cave-rock-02.xnb
 Content\cave-background-01.xnb
 Content\cave-background-02.xnb
-Content\creep\mexico.xnb
+Content\chars\mexico.xnb
+Content\chars\inquisitor.xnb
+Content\chars\mexico.dead.xnb
+Content\chars\inquisitor.dead.xnb
+Content\frostbolt.dead.xnb

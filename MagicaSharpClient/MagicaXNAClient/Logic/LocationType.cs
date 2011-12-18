@@ -51,7 +51,7 @@ namespace MagicaXNAClient
         private Dictionary<string, limit> doodardCount = new Dictionary<string,limit>();
         private readonly int backgroundVariationCount;
         private readonly string name;
-        private Sprite background = null;
+        private Background background = null;
 
         /// <summary>
         /// Расстояние от края экрана.

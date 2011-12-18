@@ -6,10 +6,18 @@ using Microsoft.Xna.Framework;
 
 namespace MagicaXNAClient
 {
-    class FrostboltGameAction : GameAction
+    class FrostboltGameAction : AreaGameAction
     {
-        internal override void Run(Vector2 position, GameObject postObject)
+        public FrostboltGameAction(Character caster) : base(frostboltDamageRadius)
         {
+            this.caster = caster;
         }
+        public override void postEffect(GameObject obj)
+        {
+            obj.Damage(caster, Damage.frost, damageAmount);
+        }
+        private Character caster = null;
+        private const float frostboltDamageRadius = 45;
+        private const int damageAmount = 10;
     }
 }

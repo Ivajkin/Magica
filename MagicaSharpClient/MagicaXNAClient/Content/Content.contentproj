@@ -38,7 +38,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="inquisitor.png">
+    <Compile Include="chars\inquisitor.png">
       <Name>inquisitor</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -99,8 +99,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="creep\mexico.png">
+    <Compile Include="chars\mexico.png">
       <Name>mexico</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chars\mexico.dead.png">
+      <Name>mexico.dead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chars\inquisitor.dead.png">
+      <Name>inquisitor.dead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frostbolt.dead.png">
+      <Name>frostbolt.dead</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

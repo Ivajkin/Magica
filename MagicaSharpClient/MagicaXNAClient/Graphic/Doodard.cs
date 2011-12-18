@@ -19,7 +19,19 @@ namespace MagicaXNAClient
         internal void Move(Vector2 position)
         {
             this.position = position;
-            sprite.Move(position);
+            this.MoveSprites(position);
         }
+
+        internal override void Damage(Character caster, Damage damageType, uint damageAmount)
+        {
+            health -= (int)damageAmount;
+            if (health <= 0)
+            {
+                this.Destroy();
+            }
+        }
+
+        int health = maxHealth;
+        const int maxHealth = 20;
     }
 }

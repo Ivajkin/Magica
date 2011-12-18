@@ -7,11 +7,11 @@ using Microsoft.Xna.Framework;
 
 namespace MagicaXNAClient
 {
-    class Background : Sprite
+    class Background : GraphicObject
     {
         internal override void Init(Texture2D texture)
         {
-            base.Init(texture);
+            this.texture = texture;
             screenRect = new Rectangle(0, 0, Graphic.pSingleton.getScreenWidth(), Graphic.pSingleton.getScreenHeight());
         }
         internal override void Draw(GameTime time, SpriteBatch spriteBatch)
@@ -20,10 +20,11 @@ namespace MagicaXNAClient
         }
         public override float getCameraDistance()
         {
-            const float farFarAway = 999999;
+            const float farFarAway = 99999999;
             return farFarAway;
         }
 
         private Rectangle screenRect;
+        protected Texture2D texture = null;
     }
 }

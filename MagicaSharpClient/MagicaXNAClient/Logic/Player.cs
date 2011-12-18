@@ -10,7 +10,7 @@ namespace MagicaXNAClient
     class Player: Character
     {
         public Player(Location location)
-            : base(Graphic.pSingleton.create<Sprite>("inquisitor"), location)
+            : base(new CharacterType("inquisitor"), Fraction.magi, location)
         {
             frostbolt = new FrostboltAbility();
 

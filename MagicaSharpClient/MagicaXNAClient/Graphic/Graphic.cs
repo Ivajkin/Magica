@@ -33,7 +33,6 @@ namespace MagicaXNAClient
         public void Draw(GameTime time)
         {
             graphicObjects.Sort(GraphicObject.closerToCamera);
-
             List<GraphicObject> destroySpriteList = new List<GraphicObject>();
             device.Clear(Color.White);
             spriteBatch.Begin();

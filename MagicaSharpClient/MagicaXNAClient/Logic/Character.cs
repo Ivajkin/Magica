@@ -9,12 +9,16 @@ namespace MagicaXNAClient
 {
     abstract class Character : GameObject
     {
-        public Character(Sprite sprite, Location location)
-            : base(sprite)
+        public Character(CharacterType type, Fraction fraction, Location location)
+            : base(type.sprite, type.spriteDead, glowSize)
         {
+            this.fraction = fraction;
             this.location = location;
 
             position = new Vector2(Graphic.pSingleton.getScreenWidth() * 0.5f, Graphic.pSingleton.getScreenHeight() * 0.5f);
+
+            this.maxHealth = type.maxHealth;
+            this.health = this.maxHealth;
         }
         sealed override public void Update(GameTime time, MouseState mouseState)
         {
@@ -36,7 +40,7 @@ namespace MagicaXNAClient
             }
             InputReaction(time, mouseState);
 
-            sprite.Move(position);
+            this.MoveSprites(position);
         }
         protected abstract void InputReaction(GameTime time, MouseState mouseState);
 
@@ -50,6 +54,24 @@ namespace MagicaXNAClient
                 isMoving = true;
             }
         }
+        /// <summary>
+        /// Нанести повреждение персонажу.
+        /// </summary>
+        /// <param name="caster">Кто наносит.</param>
+        /// <param name="damageType">Тип повреждения.</param>
+        /// <param name="damageAmount">Количество повреждения (очков жизни).</param>
+        internal override void Damage(Character caster, Damage damageType, uint damageAmount)
+        {
+            health -= (int)damageAmount;
+            if (this.health <= 0)
+            {
+                this.Destroy();
+            }
+        }
+
+        int health;
+        readonly int maxHealth;
+
         //private List<Vector2> MOAOrder = ;
         private Vector2 moveOrderAim = Vector2.Zero;
         private bool isMoving = false;
@@ -60,5 +82,7 @@ namespace MagicaXNAClient
         /// </summary>
         const float linearVelocity = 100;
         protected Location location = null;
+        protected Fraction fraction;
+        private const float glowSize = 2048;
     }
 }

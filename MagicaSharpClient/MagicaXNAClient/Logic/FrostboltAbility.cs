@@ -11,7 +11,7 @@ namespace MagicaXNAClient
         }
         protected override FrostboltSpellEffect createEffect(Vector2 start, Vector2 finish, Player owner)
         {
-            return new FrostboltSpellEffect(start, finish, Graphic.pSingleton.create<Sprite>("frostbolt"), owner);
+            return new FrostboltSpellEffect(start, finish, owner);
         }
     }
 }
